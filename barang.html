@@ -27,12 +27,36 @@
 
     <style>
         .table {
-            max-width: 80%;
-            margin: 0 auto;
+            width: 100%;
+            margin: 20px auto;
             border-collapse: separate;
             border-spacing: 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             font-weight: 600;
+        }
+
+        .table th, .table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table img {
+            width: 100px;
+            height: 150px;
+        }
+
+        @media (max-width: 767px) {
+            .table img {
+                width: 70px;
+                height: 100px;
+            }
+            .table th, .table td {
+                padding: 5px;
+                font-size: 12px;
+            }
+            .table input {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -64,144 +88,146 @@
         </div>
     </nav>
     <!-- END nav --> 
-    <div class="table">
-        <input type="search" id="mySearch" name="q" placeholder="Cari jenis produk, nama produk..." size="163" />
-    </div>
-    <div class="table-container">  
-        <table class="table">
-            <thead>
-                <tr class="judul">
-                    <th scope="col">Thumbnail</th>
-                    <th scope="col">Jenis</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Harga</th>
-                    <th scope="col">Stok</th>
-                    <th scope="col">Pembelian</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="images/bibit1.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Bibit</td>
-                    <td>Selada</td>
-                    <td>Rp 5.000</td>
-                    <td>ada</td>
-                    <td><a href="https://wa.me/p/25602089496103934/6289519895089">beli</a></td>
-                </tr>
-                <tr>
-                    <td><img src="images/bibit2.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Bibit</td>
-                    <td>Tomat</td>
-                    <td>Rp 6.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/25296191043362344/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/bibit3.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Bibit</td>
-                    <td>Sawi</td>
-                    <td>Rp 4.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/7509120789168943/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/bibit4.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Bibit</td>
-                    <td>Kangkung</td>
-                    <td>Rp 4.500</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/7796380810425525/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/bibit5.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Bibit</td>
-                    <td>Anggur</td>
-                    <td>Rp 7.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/7607262952702967/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/alat1.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Alat</td>
-                    <td>Sistem Hydroponik NFT (Nutrient Film Technique)</td>
-                    <td>Rp 500.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/5947748898682417/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/alat2.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Alat</td>
-                    <td>Tandon Air Plastik 100 Liter</td>
-                    <td>Rp 250.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/8163988010296926/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/alat3.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Alat</td>
-                    <td>Pompa Air Submersible</td>
-                    <td>Rp 150.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/6852466711523555/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/alat4.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Alat</td>
-                    <td>pH Meter Digital</td>
-                    <td>Rp 200.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/7424306820951243/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/air1.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Air</td>
-                    <td>Air RO 5 Liter</td>
-                    <td>Rp 15.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/6975437699223178/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/air2.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Air</td>
-                    <td>Air Hujan Terfilter 10 Liter</td>
-                    <td>Rp 20.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/8034205969964290/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/air3.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Air</td>
-                    <td>Air Sumur Terfilter 20 Liter</td>
-                    <td>Rp 25.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/7740762932612436/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/nutrisi1.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Nutrisi</td>
-                    <td>Nutrisi A (Fase Pertuumbuhan) /500ml</td>
-                    <td>Rp 50.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/7516933518354782/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/nutrisi2.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Nutrisi</td>
-                    <td>Nutrisi B (Fase Berbunga) /500ml</td>
-                    <td>Rp 50.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/25464280589885677/6289519895089">beli</a> </td>
-                </tr>
-                <tr>
-                    <td><img src="images/nutrisi3.jpg" alt="Thumbnail" width="100px" height="150"></td>
-                    <td>Nutrisi</td>
-                    <td>Nutrisi Tambahan /500ml</td>
-                    <td>Rp 50.000</td>
-                    <td>ada</td>
-                    <td> <a href="https://wa.me/p/8103013723055814/6289519895089">beli</a> </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container">
+        <div class="table">
+            <input type="search" id="mySearch" name="q" placeholder="Cari jenis produk, nama produk..." class="form-control" />
+        </div>
+        <div class="table-responsive table-container">  
+            <table class="table">
+                <thead>
+                    <tr class="judul">
+                        <th scope="col">Thumbnail</th>
+                        <th scope="col">Jenis</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Stok</th>
+                        <th scope="col">Pembelian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/bibit1.jpg" alt="Thumbnail"></td>
+                        <td>Bibit</td>
+                        <td>Selada</td>
+                        <td>Rp 5.000</td>
+                        <td>ada</td>
+                        <td><a href="https://wa.me/p/25602089496103934/6289519895089">beli</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bibit2.jpg" alt="Thumbnail"></td>
+                        <td>Bibit</td>
+                        <td>Tomat</td>
+                        <td>Rp 6.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/25296191043362344/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bibit3.jpg" alt="Thumbnail"></td>
+                        <td>Bibit</td>
+                        <td>Sawi</td>
+                        <td>Rp 4.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/7509120789168943/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bibit4.jpg" alt="Thumbnail"></td>
+                        <td>Bibit</td>
+                        <td>Kangkung</td>
+                        <td>Rp 4.500</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/7796380810425525/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bibit5.jpg" alt="Thumbnail"></td>
+                        <td>Bibit</td>
+                        <td>Anggur</td>
+                        <td>Rp 7.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/7607262952702967/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/alat1.jpg" alt="Thumbnail"></td>
+                        <td>Alat</td>
+                        <td>Sistem Hydroponik NFT (Nutrient Film Technique)</td>
+                        <td>Rp 500.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/5947748898682417/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/alat2.jpg" alt="Thumbnail"></td>
+                        <td>Alat</td>
+                        <td>Tandon Air Plastik 100 Liter</td>
+                        <td>Rp 250.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/8163988010296926/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/alat3.jpg" alt="Thumbnail"></td>
+                        <td>Alat</td>
+                        <td>Pompa Air Submersible</td>
+                        <td>Rp 150.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/6852466711523555/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/alat4.jpg" alt="Thumbnail"></td>
+                        <td>Alat</td>
+                        <td>pH Meter Digital</td>
+                        <td>Rp 200.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/7424306820951243/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/air1.jpg" alt="Thumbnail"></td>
+                        <td>Air</td>
+                        <td>Air RO 5 Liter</td>
+                        <td>Rp 15.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/6975437699223178/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/air2.jpg" alt="Thumbnail"></td>
+                        <td>Air</td>
+                        <td>Air Hujan Terfilter 10 Liter</td>
+                        <td>Rp 20.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/8034205969964290/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/air3.jpg" alt="Thumbnail"></td>
+                        <td>Air</td>
+                        <td>Air Sumur Terfilter 20 Liter</td>
+                        <td>Rp 25.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/7740762932612436/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/nutrisi1.jpg" alt="Thumbnail"></td>
+                        <td>Nutrisi</td>
+                        <td>Nutrisi A (Fase Pertuumbuhan) /500ml</td>
+                        <td>Rp 50.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/7516933518354782/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/nutrisi2.jpg" alt="Thumbnail"></td>
+                        <td>Nutrisi</td>
+                        <td>Nutrisi B (Fase Berbunga) /500ml</td>
+                        <td>Rp 50.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/25464280589885677/6289519895089">beli</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/nutrisi3.jpg" alt="Thumbnail"></td>
+                        <td>Nutrisi</td>
+                        <td>Nutrisi Tambahan /500ml</td>
+                        <td>Rp 50.000</td>
+                        <td>ada</td>
+                        <td> <a href="https://wa.me/p/8103013723055814/6289519895089">beli</a> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- loader -->
@@ -233,7 +259,6 @@
                 rows.forEach(function (row) {
                     var jenis = row.cells[1].textContent.toLowerCase();
                     var nama = row.cells[2].textContent.toLowerCase();
-                    var isVisible = jenis.includes(searchTerm)
                     var isVisible = jenis.includes(searchTerm) || nama.includes(searchTerm);
                     row.style.display = isVisible ? '' : 'none';
                 });
